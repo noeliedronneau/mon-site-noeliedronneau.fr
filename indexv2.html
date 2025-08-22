@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site Auteur</title>
+  <style>
+    body { margin:0; font-family:Arial,sans-serif; line-height:1.6; }
+    header { background:#4a90e2; color:white; padding:2rem; text-align:center; }
+    header h1 { margin:0; font-size:2.5rem; }
+    nav { margin-top:1rem; }
+    nav a { color:white; margin:0 10px; text-decoration:none; font-weight:bold; }
+    nav a:hover { text-decoration:underline; }
+    section { padding:4rem 2rem; text-align:center; }
+    h2 { color:#4a90e2; }
+
+    .btn {
+      display:inline-block; padding:12px 25px;
+      text-decoration:none; border-radius:30px;
+      background:#4a90e2; color:#fff;
+      box-shadow:0 4px 10px rgba(0,0,0,.15);
+      transition:transform .2s, box-shadow .2s;
+    }
+    .btn:hover { transform:scale(1.03); box-shadow:0 6px 14px rgba(0,0,0,.22); }
+
+    .btn-row {
+      display:grid; grid-template-columns:1fr 1fr;
+      gap:.6rem; margin-top:.8rem;
+    }
+    .btn-gumroad {
+      display:inline-block; padding:12px 25px;
+      text-decoration:none; border-radius:30px;
+      background:#ff6f61; color:#fff;
+      box-shadow:0 4px 10px rgba(0,0,0,.15);
+      transition:transform .2s, box-shadow .2s;
+    }
+    .btn-gumroad:hover { transform:scale(1.03); box-shadow:0 6px 14px rgba(0,0,0,.22); }
+
+    .books-container {
+      display:flex; flex-wrap:wrap; justify-content:center; gap:2rem; margin-top:2rem;
+    }
+    .book-card {
+      background:white; border-radius:15px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+      padding:1.5rem; max-width:250px;
+      transition:transform 0.3s, box-shadow 0.3s;
+    }
+    .book-card:hover { transform:translateY(-5px); box-shadow:0 6px 15px rgba(0,0,0,0.2); }
+    .book-card img { width:100%; border-radius:10px; margin-bottom:1rem; }
+    .book-card h3 { margin:0.5rem 0; font-size:1.2rem; color:#333; }
+    .book-card p { font-size:0.95rem; color:#555; margin-bottom:1rem; }
+
+    footer { background:#333; color:white; padding:2rem; text-align:center; }
+    @media (max-width:768px) { .books-container{flex-direction:column;align-items:center;} .btn-row{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <header>
+    <h1>Bienvenue sur mon site d’auteur</h1>
+    <p>Découvrez mes livres, mes projets et entrez en contact avec moi</p>
+    <nav>
+      <a href="#apropos">À propos</a>
+      <a href="#services">Services</a>
+      <a href="#livres">Mes livres</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- À propos -->
+  <section id="apropos">
+    <h2>À propos</h2>
+    <p>Je suis un auteur passionné qui écrit des histoires captivantes et inspirantes. 
+    Sur ce site, vous pouvez découvrir mes ouvrages et en savoir plus sur mon parcours.</p>
+  </section>
+
+  <!-- Services -->
+  <section id="services">
+    <h2>Mes Services</h2>
+    <p>En plus d’écrire des livres, je propose :</p>
+    <ul style="list-style:none; padding:0;">
+      <li>✍️ Ateliers d’écriture</li>
+      <li>📚 Conférences et lectures</li>
+      <li>💡 Coaching littéraire</li>
+    </ul>
+  </section>
+
+  <!-- Mes Livres -->
+  <section id="livres">
+    <h2>📚 Mes Livres</h2>
+    <p>Découvrez mes ouvrages disponibles :</p>
+    <div class="books-container">
+
+      <!-- Livre 1 : L'Alchimiste -->
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/81drfTT9ZfL.jpg" alt="Couverture L'Alchimiste">
+        <h3>L'Alchimiste</h3>
+        <p>Un conte philosophique universel qui parle de rêves, de destinée et de quête personnelle.</p>
+        <div class="btn-row">
+          <a href="https://www.amazon.fr/dp/2290332513" target="_blank" rel="noopener" class="btn">📖 Amazon</a>
+          <a href="https://gumroad.com/l/alchimiste-bonus" target="_blank" rel="noopener" class="btn-gumroad">⚡ Direct (PDF)</a>
+        </div>
+      </div>
+
+      <!-- Livre 2 : Les Misérables -->
+      <div class="book-card">
+        <img src="https://m.media-amazon.com/images/I/91uQpJZp5cL.jpg" alt="Couverture Les Misérables">
+        <h3>Les Misérables</h3>
+        <p>L'œuvre magistrale de Victor Hugo, un roman historique et social qui traverse les siècles.</p>
+        <div class="btn-row">
+          <a href="https://www.amazon.fr/dp/2253004223" target="_blank" rel="noopener" class="btn">📖 Amazon</a>
+          <a href="https://gumroad.com/l/miserables-bonus" target="_blank" rel="noopener" class="btn-gumroad">⚡ Direct (PDF)</a>
+        </div>
+      </div>
+
+      <!-- Livre 3 : Exemple fictif -->
+      <div class="book-card">
+        <img src="https://via.placeholder.com/200x300?text=Mon+Livre" alt="Couverture Mon Premier Roman">
+        <h3>Mon Premier Roman</h3>
+        <p>Une histoire inédite écrite par moi-même, pleine d’aventures et d’émotions intenses.</p>
+        <div class="btn-row">
+          <a href="https://www.amazon.fr/dp/B0EXEMPLE" target="_blank" rel="noopener" class="btn">📖 Amazon</a>
+          <a href="https://gumroad.com/l/mon-premier-roman" target="_blank" rel="noopener" class="btn-gumroad">⚡ Direct (PDF)</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Vous souhaitez me contacter ? Remplissez le formulaire ci-dessous :</p>
+    <form>
+      <input type="text" placeholder="Votre nom" required style="padding:0.5rem; margin:0.5rem;"><br>
+      <input type="email" placeholder="Votre email" required style="padding:0.5rem; margin:0.5rem;"><br>
+      <textarea placeholder="Votre message" rows="4" required style="padding:0.5rem; margin:0.5rem; width:80%;"></textarea><br>
+      <button type="submit" class="btn">Envoyer</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Mon Site Auteur | Tous droits réservés</p>
+  </footer>
+
+</body>
+</html>
