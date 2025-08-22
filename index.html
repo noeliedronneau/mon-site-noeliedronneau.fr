@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auteur - Mes Livres</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; text-align: center; background:#f4f4f4; }
+    header { background:#222; color:#fff; padding:20px; }
+    .container { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap:20px; padding:20px; }
+    .book-card { background:#fff; border-radius:10px; padding:15px; box-shadow:0 4px 8px rgba(0,0,0,.1); }
+    .book-card img { max-width:100%; border-radius:8px; }
+    .btn-row { display:grid; grid-template-columns:1fr 1fr; gap:.6rem; margin-top:.8rem; }
+    .btn, .btn-gumroad {
+      display:inline-block; padding:12px; text-decoration:none; border-radius:30px;
+      box-shadow:0 4px 10px rgba(0,0,0,.15); transition:transform .2s, box-shadow .2s;
+    }
+    .btn { background:#0070f3; color:#fff; }
+    .btn-gumroad { background:#ff6f61; color:#fff; }
+    .btn:hover, .btn-gumroad:hover { transform:scale(1.05); box-shadow:0 6px 14px rgba(0,0,0,.22); }
+    @media (max-width:480px){ .btn-row { grid-template-columns:1fr; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Bienvenue sur mon site d'auteur</h1>
+    <p>Découvrez mes livres disponibles sur Amazon et en direct</p>
+  </header>
+
+  <main class="container">
+    <!-- Livre 1 -->
+    <div class="book-card">
+      <img src="images/livre1.jpg" alt="Livre 1">
+      <h3>Livre 1</h3>
+      <p>Résumé rapide du livre 1.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.fr/dp/2290332513" target="_blank" class="btn">📖 Amazon</a>
+        <a href="https://gumroad.com/l/mon-livre1" target="_blank" class="btn-gumroad">⚡ Direct (PDF)</a>
+      </div>
+    </div>
+
+    <!-- Livre 2 -->
+    <div class="book-card">
+      <img src="images/livre2.jpg" alt="Livre 2">
+      <h3>Livre 2</h3>
+      <p>Résumé rapide du livre 2.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.fr/dp/ASIN_DU_LIVRE2" target="_blank" class="btn">📖 Amazon</a>
+        <a href="https://gumroad.com/l/mon-livre2" target="_blank" class="btn-gumroad">⚡ Direct (PDF)</a>
+      </div>
+    </div>
+
+    <!-- Livre 3 -->
+    <div class="book-card">
+      <img src="images/livre3.jpg" alt="Livre 3">
+      <h3>Livre 3</h3>
+      <p>Résumé rapide du livre 3.</p>
+      <div class="btn-row">
+        <a href="https://www.amazon.fr/dp/ASIN_DU_LIVRE3" target="_blank" class="btn">📖 Amazon</a>
+        <a href="https://gumroad.com/l/mon-livre3" target="_blank" class="btn-gumroad">⚡ Direct (PDF)</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
