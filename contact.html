@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Noélie Dronneau</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Noélie Dronneau</h1>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="livres.html">Mes Livres</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="burger" id="burger"><div></div><div></div><div></div></div>
+  </header>
+  <div class="overlay" id="overlay"></div>
+
+  <main>
+    <h2>✉️ Me Contacter</h2>
+    <p>Tu peux m’écrire directement par email :</p>
+    <p><a href="mailto:contact@noeliedronneau.fr">contact@noeliedronneau.fr</a></p>
+
+    <h3>Ou via ce formulaire :</h3>
+    <form action="mailto:contact@noeliedronneau.fr" method="post" enctype="text/plain">
+      <label for="nom">Nom :</label><br>
+      <input type="text" id="nom" name="nom" required><br><br>
+
+      <label for="email">Email :</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message :</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </main>
+
+  <script>
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+    const overlay = document.getElementById('overlay');
+    function toggleMenu() { 
+      burger.classList.toggle('open'); 
+      menu.classList.toggle('active'); 
+      overlay.classList.toggle('active'); 
+    }
+    burger.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+  </script>
+</body>
+</html>
