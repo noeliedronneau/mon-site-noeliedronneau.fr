@@ -19,15 +19,36 @@
     <div class="burger" id="burger"><div></div><div></div><div></div></div>
   </header>
   <div class="overlay" id="overlay"></div>
+
   <main>
-    <h2>Contact ✉️</h2>
-    <p>Tu peux m’écrire à : <a href="mailto:contact@noeliedronneau.fr">contact@noeliedronneau.fr</a></p>
+    <h2>✉️ Me Contacter</h2>
+    <p>Tu peux m’écrire directement par email :</p>
+    <p><a href="mailto:contact@noeliedronneau.fr">contact@noeliedronneau.fr</a></p>
+
+    <h3>Ou via ce formulaire :</h3>
+    <form action="mailto:contact@noeliedronneau.fr" method="post" enctype="text/plain">
+      <label for="nom">Nom :</label><br>
+      <input type="text" id="nom" name="nom" required><br><br>
+
+      <label for="email">Email :</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message :</label><br>
+      <textarea id="message" name="message" rows="5" required></textarea><br><br>
+
+      <button type="submit">Envoyer</button>
+    </form>
   </main>
+
   <script>
     const burger = document.getElementById('burger');
     const menu = document.getElementById('menu');
     const overlay = document.getElementById('overlay');
-    function toggleMenu() { burger.classList.toggle('open'); menu.classList.toggle('active'); overlay.classList.toggle('active'); }
+    function toggleMenu() { 
+      burger.classList.toggle('open'); 
+      menu.classList.toggle('active'); 
+      overlay.classList.toggle('active'); 
+    }
     burger.addEventListener('click', toggleMenu);
     overlay.addEventListener('click', toggleMenu);
   </script>
