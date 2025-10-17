@@ -21,21 +21,50 @@
   <div class="overlay" id="overlay"></div>
 
   <main>
-    <h2>📖 Mes Livres</h2>
-    <p>Retrouvez ci-dessous mes ouvrages disponibles :</p>
-    <ul>
-      <li>
-        <strong>Titre 1</strong>  
-        – <a href="https://www.amazon.fr/dp/TON_ID_AMAZON" target="_blank">Acheter sur Amazon</a>  
-        – <a href="https://gumroad.com/tonlien" target="_blank">Acheter sur Gumroad</a>
-      </li>
-      <li>
-        <strong>Titre 2</strong>  
-        – <a href="https://www.amazon.fr/dp/TON_ID_AMAZON2" target="_blank">Acheter sur Amazon</a>  
-        – <a href="https://gumroad.com/tonlien2" target="_blank">Acheter sur Gumroad</a>
-      </li>
-      <!-- Tu pourras rajouter ici d'autres livres -->
-    </ul>
+    <h2>📖 Mes livres</h2>
+
+<div class="books">
+  <!-- Livre 1 -->
+  <article class="book">
+    <!-- Option A : image dans ton repo -->
+    <img src="images/adoptee.jpg" alt="Couverture - Adoptée : Entre deux monde" loading="lazy" width="400" height="600">
+    <!-- Option B : image Amazon (remplace par l’URL réelle si tu veux) -->
+    <!-- <img src="https://m.media-amazon.com/images/I/....jpg" alt="Couverture - Adoptée : Entre deux monde" loading="lazy" width="400" height="600"> -->
+
+    <h3>Adoptée : Entre deux monde</h3>
+    <p>Témoignage d’adoption et de cheminement entre deux cultures.</p>
+
+    <div class="btn-row">
+      <a href="https://amzn.eu/d/8ADtzNg" target="_blank" rel="noopener" class="btn">📖 Amazon</a>
+      <a href="https://gumroad.com/tonlien" target="_blank" rel="noopener" class="btn btn-gumroad">⚡ Gumroad</a>
+    </div>
+  </article>
+
+  <!-- Livre 2 -->
+  <article class="book">
+    <img src="images/abandon.jpg" alt="Couverture - Au-delà de l’abandon" loading="lazy" width="400" height="600">
+    <h3>Au-delà de l’abandon: Témoignage d’une vie réconciliée</h3>
+    <p>Un parcours de résilience, de réconciliation et d’espérance.</p>
+
+    <div class="btn-row">
+      <a href="https://amzn.eu/d/6hu4hmk" target="_blank" rel="noopener" class="btn">📖 Amazon</a>
+      <a href="https://gumroad.com/tonlien2" target="_blank" rel="noopener" class="btn btn-gumroad">⚡ Gumroad</a>
+    </div>
+  </article>
+
+  <!-- Livre 3 -->
+  <article class="book">
+    <img src="images/interlude.jpg" alt="Couverture - Interlude narratif" loading="lazy" width="400" height="600">
+    <h3>Interlude narratif : Carnet du Mali et Dossier d’adoption & journaux de maman</h3>
+    <p>L’amour entre les lignes : récits, carnets, et regards croisés.</p>
+
+    <div class="btn-row">
+      <a href="https://amzn.eu/d/d8T0Fuf" target="_blank" rel="noopener" class="btn">📖 Amazon</a>
+      <a href="https://gumroad.com/tonlien2" target="_blank" rel="noopener" class="btn btn-gumroad">⚡ Gumroad</a>
+    </div>
+  </article>
+</div>
+
   </main>
 
   <script>
