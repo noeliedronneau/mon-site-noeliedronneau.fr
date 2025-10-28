@@ -4,15 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Blog</title>
-  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <nav class="site-nav">
-    <a href="../index.html">Accueil</a>
-    <a href="./index.html" class="active">Blog</a>
-    <a href="../actualites/index.html">Actualités</a>
-  </nav>
-
+   <header>
+    <h1>Noëlie Dronneau</h1>
+    <nav id="menu">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="livres.html">Mes Livres</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="actualités.html">Actualités</a></li>
+      </ul>
+    </nav>
+    <div class="burger" id="burger"><div></div><div></div><div></div></div>
+  </header>
+  <div class="overlay" id="overlay"></div>
+  
   <main class="container">
     <h1>Blog</h1>
     <section class="cards">
