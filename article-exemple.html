@@ -49,6 +49,33 @@
     <p><a class="btn" href="./blog.html">← Retour au Blog</a></p>
   </main>
 
-  <script src="app.js"></script>
+  <script>
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+    const overlay = document.getElementById('overlay');
+    function toggleMenu() { 
+      burger.classList.toggle('open'); 
+      menu.classList.toggle('active'); 
+      overlay.classList.toggle('active'); 
+    }
+    burger.addEventListener('click', toggleMenu);
+    overlay.addEventListener('click', toggleMenu);
+  </script>
+  
+  <footer class="site-footer">
+  <div class="footer-container">
+    <p>&copy; 2025 Mon Site – Tous droits réservés.</p>
+
+    <div class="social-links">
+      <a href="https://www.facebook.com/share/1NEuLEiuAa/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+        <img src="facebook.svg" alt="Logo Facebook">
+      </a>
+      <a href="https://www.instagram.com/ezra_ng_adoption?igsh=czY3aXphY3Z5bHg5&utm_source=qr" target="_blank" aria-label="Instagram">
+        <img src="instagram.svg" alt="Logo Instagram">
+      </a>
+    </div>
+  </div>
+</footer>
+
 </body>
 </html>
