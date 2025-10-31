@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <!-- Accueil -->
+  <url>
+    <loc>https://noeliedronneau.fr/</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Page Mes livres -->
+  <url>
+    <loc>https://noeliedronneau.fr/livres.html</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <!-- Exemple d’images de couvertures (remplace par tes vraies URLs) -->
+    <image:image>
+      <image:loc>https://noeliedronneau.fr/images/adoptee-entre-deux-mondes.jpg</image:loc>
+      <image:title>Adoptée entre deux mondes – couverture</image:title>
+    </image:image>
+  </url>
+
+  <!-- Blog (liste) -->
+  <url>
+    <loc>https://noeliedronneau.fr/blog/</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Exemple d’article de blog (duplique ce bloc pour chaque article) -->
+  <url>
+    <loc>https://noeliedronneau.fr/blog/mon-article-exemple/</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://noeliedronneau.fr/contact.html</loc>
+    <lastmod>2025-10-29</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+</urlset>
