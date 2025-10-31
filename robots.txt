@@ -1,10 +1,14 @@
+# robots.txt pour https://noeliedronneau.fr
+# Fichier créé le 29 octobre 2025
+
 User-agent: *
+# Autorise l’exploration de tout le site
 Allow: /
 
-# Bloquer d'éventuels dossiers techniques (si inexistants, tu peux laisser tel quel)
-Disallow: /tmp/
+# Empêche les robots d’accéder à des dossiers techniques (si présents)
 Disallow: /admin/
 Disallow: /cgi-bin/
+Disallow: /tmp/
 
-# Indiquer l’emplacement du sitemap
+# Indique à Google où se trouve le sitemap
 Sitemap: https://noeliedronneau.fr/sitemap.xml
