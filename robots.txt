@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Bloquer d'éventuels dossiers techniques (si inexistants, tu peux laisser tel quel)
+Disallow: /tmp/
+Disallow: /admin/
+Disallow: /cgi-bin/
+
+# Indiquer l’emplacement du sitemap
+Sitemap: https://noeliedronneau.fr/sitemap.xml
